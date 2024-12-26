@@ -1,0 +1,132 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'TOP' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : TOP
+Version: T-2022.03
+Date   : Fri Dec 20 13:28:11 2024
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+  Startpoint: LB/LB2_reg_2__1_
+              (rising edge-triggered flip-flop clocked by clk)
+  Endpoint: PSSC/PSSRAM1
+            (rising edge-triggered flip-flop clocked by clk')
+  Path Group: clk
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  TOP                Zero                  sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock clk (rise edge)                                   0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  LB/LB2_reg_2__1_/CK (DFFRPQ_X2M_A9TR)                   0.00 #     0.00 r
+  LB/LB2_reg_2__1_/Q (DFFRPQ_X2M_A9TR)                    0.14       0.14 r
+  LB/R5[1] (LineBuffer)                                   0.00       0.14 r
+  PE1/R5[1] (PE_0)                                        0.00       0.14 r
+  PE1/mult_29/a[1] (PE_0_DW_mult_tc_5_DW_mult_tc_23)      0.00       0.14 r
+  PE1/mult_29/U312/Y (XNOR2_X0P5M_A9TR)                   0.29       0.43 r
+  PE1/mult_29/U309/Y (NAND2_X1A_A9TR)                     0.17       0.60 f
+  PE1/mult_29/U383/Y (OAI22_X0P5M_A9TR)                   0.13       0.73 r
+  PE1/mult_29/U99/S (ADDH_X1M_A9TR)                       0.13       0.87 f
+  PE1/mult_29/U51/CO (ADDF_X1M_A9TR)                      0.09       0.95 f
+  PE1/mult_29/U50/CO (ADDF_X1M_A9TR)                      0.08       1.04 f
+  PE1/mult_29/U49/CO (ADDF_X1M_A9TR)                      0.08       1.12 f
+  PE1/mult_29/U48/CO (ADDF_X1M_A9TR)                      0.08       1.20 f
+  PE1/mult_29/U47/CO (ADDF_X1M_A9TR)                      0.08       1.28 f
+  PE1/mult_29/U46/CO (ADDF_X1M_A9TR)                      0.08       1.37 f
+  PE1/mult_29/U45/CO (ADDF_X1M_A9TR)                      0.08       1.45 f
+  PE1/mult_29/U44/CO (ADDF_X1M_A9TR)                      0.08       1.53 f
+  PE1/mult_29/U43/CO (ADDF_X1M_A9TR)                      0.08       1.61 f
+  PE1/mult_29/U42/CO (ADDF_X1M_A9TR)                      0.08       1.70 f
+  PE1/mult_29/U41/CO (ADDF_X1M_A9TR)                      0.08       1.78 f
+  PE1/mult_29/U40/CO (ADDF_X1M_A9TR)                      0.08       1.86 f
+  PE1/mult_29/U39/CO (ADDF_X1M_A9TR)                      0.08       1.94 f
+  PE1/mult_29/U38/CO (ADDF_X1M_A9TR)                      0.08       2.02 f
+  PE1/mult_29/U37/CO (ADDF_X1M_A9TR)                      0.08       2.11 f
+  PE1/mult_29/U36/CO (ADDF_X1M_A9TR)                      0.08       2.19 f
+  PE1/mult_29/U35/CO (ADDF_X1M_A9TR)                      0.08       2.27 f
+  PE1/mult_29/U34/CO (ADDF_X1M_A9TR)                      0.08       2.35 f
+  PE1/mult_29/U33/CO (ADDF_X1M_A9TR)                      0.08       2.44 f
+  PE1/mult_29/U32/CO (ADDF_X1M_A9TR)                      0.08       2.52 f
+  PE1/mult_29/U31/CO (ADDF_X1M_A9TR)                      0.07       2.59 f
+  PE1/mult_29/U336/Y (XOR2_X0P5M_A9TR)                    0.08       2.67 f
+  PE1/mult_29/U334/Y (XOR2_X0P5M_A9TR)                    0.19       2.86 r
+  PE1/mult_29/product[24] (PE_0_DW_mult_tc_5_DW_mult_tc_23)
+                                                          0.00       2.86 r
+  PE1/conv5[24] (PE_0)                                    0.00       2.86 r
+  PE1AT/conv5[24] (AT_0)                                  0.00       2.86 r
+  PE1AT/add_6_root_add_32_2/B[24] (AT_0_DW01_add_6_DW01_add_41)
+                                                          0.00       2.86 r
+  PE1AT/add_6_root_add_32_2/U1_24/CO (ADDF_X1M_A9TR)      0.16       3.02 r
+  PE1AT/add_6_root_add_32_2/U1_25/S (ADDF_X1M_A9TR)       0.11       3.13 r
+  PE1AT/add_6_root_add_32_2/SUM[25] (AT_0_DW01_add_6_DW01_add_41)
+                                                          0.00       3.13 r
+  PE1AT/add_2_root_add_32_2/A[25] (AT_0_DW01_add_2_DW01_add_37)
+                                                          0.00       3.13 r
+  PE1AT/add_2_root_add_32_2/U1_25/S (ADDF_X1M_A9TR)       0.13       3.26 f
+  PE1AT/add_2_root_add_32_2/SUM[25] (AT_0_DW01_add_2_DW01_add_37)
+                                                          0.00       3.26 f
+  PE1AT/add_1_root_add_0_root_add_32_2/B[25] (AT_0_DW01_add_1_DW01_add_36)
+                                                          0.00       3.26 f
+  PE1AT/add_1_root_add_0_root_add_32_2/U1_25/CO (ADDF_X1M_A9TR)
+                                                          0.09       3.35 f
+  PE1AT/add_1_root_add_0_root_add_32_2/U8/Y (AOI222_X0P5M_A9TR)
+                                                          0.15       3.50 r
+  PE1AT/add_1_root_add_0_root_add_32_2/U11/Y (OAI222_X0P5M_A9TR)
+                                                          0.11       3.61 f
+  PE1AT/add_1_root_add_0_root_add_32_2/U1/Y (XOR2_X1M_A9TR)
+                                                          0.28       3.89 r
+  PE1AT/add_1_root_add_0_root_add_32_2/SUM[28] (AT_0_DW01_add_1_DW01_add_36)
+                                                          0.00       3.89 r
+  PE1AT/add_0_root_add_0_root_add_32_2/A[28] (AT_0_DW01_add_0_DW01_add_35)
+                                                          0.00       3.89 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_28/CO (ADDF_X1M_A9TR)
+                                                          0.19       4.09 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_29/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.18 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_30/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.27 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_31/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.36 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_32/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.45 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_33/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.54 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_34/CO (ADDF_X1M_A9TR)
+                                                          0.09       4.63 r
+  PE1AT/add_0_root_add_0_root_add_32_2/U1_35/S (ADDF_X1M_A9TR)
+                                                          0.09       4.72 r
+  PE1AT/add_0_root_add_0_root_add_32_2/SUM[35] (AT_0_DW01_add_0_DW01_add_35)
+                                                          0.00       4.72 r
+  PE1AT/sum[35] (AT_0)                                    0.00       4.72 r
+  PSSC/ps_sram1_wr_data[35] (partial_sum_dp_sram_control)
+                                                          0.00       4.72 r
+  PSSC/U5/Y (NOR2B_X1M_A9TR)                              0.11       4.83 r
+  PSSC/PSSRAM1/DB[35] (partial_sum_sram)                  0.00       4.83 r
+  data arrival time                                                  4.83
+
+  clock clk' (rise edge)                                  5.00       5.00
+  clock network delay (ideal)                             0.00       5.00
+  PSSC/PSSRAM1/CLKB (partial_sum_sram)                    0.00       5.00 r
+  library setup time                                     -0.06       4.94
+  data required time                                                 4.94
+  --------------------------------------------------------------------------
+  data required time                                                 4.94
+  data arrival time                                                 -4.83
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.12
+
+
+1

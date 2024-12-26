@@ -1,0 +1,144 @@
+ 
+****************************************
+Report : area
+Design : TOP
+Version: T-2022.03
+Date   : Fri Dec 20 13:28:11 2024
+****************************************
+
+Library(s) Used:
+
+    sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c (File: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db)
+    partial_sum_sram_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/04_partial_sum_dp_SRAM/partial_sum_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
+    kernel_rf_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/03_kernel_RF/kernel_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
+    bias_rf_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/02_bias_RF/bias_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
+    input_sram_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/01_input_SRAM/input_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
+
+Number of ports:                         9788
+Number of nets:                         28115
+Number of cells:                        14261
+Number of combinational cells:          12488
+Number of sequential cells:              1663
+Number of macros/black boxes:              13
+Number of buf/inv:                       1168
+Number of references:                      22
+
+Combinational area:              24847.980671
+Buf/Inv area:                      717.368399
+Noncombinational area:            6226.113296
+Macro/Black Box area:           747255.501953
+Net Interconnect area:      undefined  (Wire load has zero net area)
+
+Total cell area:                778329.595920
+Total area:                 undefined
+
+Hierarchical area distribution
+------------------------------
+
+                                  Global cell area               Local cell area
+                                  --------------------  ---------------------------------- 
+Hierarchical cell                 Absolute     Percent  Combi-      Noncombi-  Black-
+                                  Total        Total    national    national   boxes        Design
+--------------------------------  -----------  -------  ----------  ---------  -----------  -------------------------------
+TOP                               778329.5959    100.0    171.0072     0.0000       0.0000  TOP
+BRFC                                7021.7996      0.9      8.1648     0.0000    7013.6348  bias_rf_control
+ISC                                56148.5630      7.2     34.0200     0.0000   56114.5430  input_sram_control
+KRFC                               28440.0110      3.7     73.9368     0.0000   28366.0742  kernel_rf_control
+LB                                  4967.6002      0.6    109.5444  4858.0558       0.0000  LineBuffer
+PE1                                 5158.1123      0.7    175.0896   342.0144       0.0000  PE_0
+PE1/mult_24                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_0_DW_mult_tc_3
+PE1/mult_25                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_1_DW_mult_tc_7
+PE1/mult_26                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_2_DW_mult_tc_11
+PE1/mult_27                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_3_DW_mult_tc_15
+PE1/mult_28                          516.8772      0.1    516.8772     0.0000       0.0000  PE_0_DW_mult_tc_4_DW_mult_tc_19
+PE1/mult_29                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_5_DW_mult_tc_23
+PE1/mult_30                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_6_DW_mult_tc_27
+PE1/mult_31                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_7_DW_mult_tc_31
+PE1/mult_32                          515.5164      0.1    515.5164     0.0000       0.0000  PE_0_DW_mult_tc_8_DW_mult_tc_35
+PE1AT                                940.9932      0.1      0.6804     0.0000       0.0000  AT_0
+PE1AT/add_0_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_0_DW01_add_0_DW01_add_35
+PE1AT/add_1_root_add_0_root_add_32_2    107.5032     0.0   107.5032    0.0000       0.0000  AT_0_DW01_add_1_DW01_add_36
+PE1AT/add_2_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_0_DW01_add_4_DW01_add_39
+PE1AT/add_2_root_add_32_2            100.4724      0.0    100.4724     0.0000       0.0000  AT_0_DW01_add_2_DW01_add_37
+PE1AT/add_3_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_0_DW01_add_3_DW01_add_38
+PE1AT/add_5_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_0_DW01_add_5_DW01_add_40
+PE1AT/add_6_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_0_DW01_add_6_DW01_add_41
+PE1AT/add_7_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_0_DW01_add_7_DW01_add_42
+PE1AT/add_8_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_0_DW01_add_8_DW01_add_43
+PE2                                 5158.1123      0.7    175.0896   342.0144       0.0000  PE_3
+PE2/mult_24                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_0
+PE2/mult_25                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_1_DW_mult_tc_4
+PE2/mult_26                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_2_DW_mult_tc_8
+PE2/mult_27                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_3_DW_mult_tc_12
+PE2/mult_28                          516.8772      0.1    516.8772     0.0000       0.0000  PE_3_DW_mult_tc_4_DW_mult_tc_16
+PE2/mult_29                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_5_DW_mult_tc_20
+PE2/mult_30                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_6_DW_mult_tc_24
+PE2/mult_31                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_7_DW_mult_tc_28
+PE2/mult_32                          515.5164      0.1    515.5164     0.0000       0.0000  PE_3_DW_mult_tc_8_DW_mult_tc_32
+PE2AT                                940.9932      0.1      0.6804     0.0000       0.0000  AT_3
+PE2AT/add_0_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_3_DW01_add_0_DW01_add_8
+PE2AT/add_1_root_add_0_root_add_32_2    107.5032     0.0   107.5032    0.0000       0.0000  AT_3_DW01_add_1_DW01_add_9
+PE2AT/add_2_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_3_DW01_add_4_DW01_add_12
+PE2AT/add_2_root_add_32_2            100.4724      0.0    100.4724     0.0000       0.0000  AT_3_DW01_add_2_DW01_add_10
+PE2AT/add_3_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_3_DW01_add_3_DW01_add_11
+PE2AT/add_5_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_3_DW01_add_5_DW01_add_13
+PE2AT/add_6_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_3_DW01_add_6_DW01_add_14
+PE2AT/add_7_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_3_DW01_add_7_DW01_add_15
+PE2AT/add_8_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_3_DW01_add_8_DW01_add_16
+PE3                                 5158.1123      0.7    175.0896   342.0144       0.0000  PE_2
+PE3/mult_24                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_0_DW_mult_tc_1
+PE3/mult_25                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_1_DW_mult_tc_5
+PE3/mult_26                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_2_DW_mult_tc_9
+PE3/mult_27                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_3_DW_mult_tc_13
+PE3/mult_28                          516.8772      0.1    516.8772     0.0000       0.0000  PE_2_DW_mult_tc_4_DW_mult_tc_17
+PE3/mult_29                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_5_DW_mult_tc_21
+PE3/mult_30                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_6_DW_mult_tc_25
+PE3/mult_31                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_7_DW_mult_tc_29
+PE3/mult_32                          515.5164      0.1    515.5164     0.0000       0.0000  PE_2_DW_mult_tc_8_DW_mult_tc_33
+PE3AT                                940.9932      0.1      0.6804     0.0000       0.0000  AT_2
+PE3AT/add_0_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_2_DW01_add_0_DW01_add_17
+PE3AT/add_1_root_add_0_root_add_32_2    107.5032     0.0   107.5032    0.0000       0.0000  AT_2_DW01_add_1_DW01_add_18
+PE3AT/add_2_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_2_DW01_add_4_DW01_add_21
+PE3AT/add_2_root_add_32_2            100.4724      0.0    100.4724     0.0000       0.0000  AT_2_DW01_add_2_DW01_add_19
+PE3AT/add_3_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_2_DW01_add_3_DW01_add_20
+PE3AT/add_5_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_2_DW01_add_5_DW01_add_22
+PE3AT/add_6_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_2_DW01_add_6_DW01_add_23
+PE3AT/add_7_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_2_DW01_add_7_DW01_add_24
+PE3AT/add_8_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_2_DW01_add_8_DW01_add_25
+PE4                                 5158.1123      0.7    175.0896   342.0144       0.0000  PE_1
+PE4/mult_24                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_0_DW_mult_tc_2
+PE4/mult_25                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_1_DW_mult_tc_6
+PE4/mult_26                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_2_DW_mult_tc_10
+PE4/mult_27                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_3_DW_mult_tc_14
+PE4/mult_28                          516.8772      0.1    516.8772     0.0000       0.0000  PE_1_DW_mult_tc_4_DW_mult_tc_18
+PE4/mult_29                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_5_DW_mult_tc_22
+PE4/mult_30                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_6_DW_mult_tc_26
+PE4/mult_31                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_7_DW_mult_tc_30
+PE4/mult_32                          515.5164      0.1    515.5164     0.0000       0.0000  PE_1_DW_mult_tc_8_DW_mult_tc_34
+PE4AT                                940.9932      0.1      0.6804     0.0000       0.0000  AT_1
+PE4AT/add_0_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_1_DW01_add_0_DW01_add_26
+PE4AT/add_1_root_add_0_root_add_32_2    107.5032     0.0   107.5032    0.0000       0.0000  AT_1_DW01_add_1_DW01_add_27
+PE4AT/add_2_root_add_0_root_add_32_2    129.5028     0.0   129.5028    0.0000       0.0000  AT_1_DW01_add_4_DW01_add_30
+PE4AT/add_2_root_add_32_2            100.4724      0.0    100.4724     0.0000       0.0000  AT_1_DW01_add_2_DW01_add_28
+PE4AT/add_3_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_1_DW01_add_3_DW01_add_29
+PE4AT/add_5_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_1_DW01_add_5_DW01_add_31
+PE4AT/add_6_root_add_32_2             96.8436      0.0     96.8436     0.0000       0.0000  AT_1_DW01_add_6_DW01_add_32
+PE4AT/add_7_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_1_DW01_add_7_DW01_add_33
+PE4AT/add_8_root_add_32_2             93.2148      0.0     93.2148     0.0000       0.0000  AT_1_DW01_add_8_DW01_add_34
+PSSC                              655908.6700     84.3    147.4200     0.0000  655761.2500  partial_sum_dp_sram_control
+ReLU1                                318.8808      0.0     59.8752     0.0000       0.0000  ReLU_0
+ReLU1/add_8                          129.5028      0.0    129.5028     0.0000       0.0000  ReLU_0_DW01_add_1_DW01_add_7
+ReLU1/add_8_2                        129.5028      0.0    129.5028     0.0000       0.0000  ReLU_0_DW01_add_0_DW01_add_6
+ReLU2                                318.8808      0.0     59.8752     0.0000       0.0000  ReLU_3
+ReLU2/add_8                          129.5028      0.0    129.5028     0.0000       0.0000  ReLU_3_DW01_add_1_DW01_add_5
+ReLU2/add_8_2                        129.5028      0.0    129.5028     0.0000       0.0000  ReLU_3_DW01_add_0_DW01_add_4
+ReLU3                                318.8808      0.0     59.8752     0.0000       0.0000  ReLU_2
+ReLU3/add_8                          129.5028      0.0    129.5028     0.0000       0.0000  ReLU_2_DW01_add_1_DW01_add_3
+ReLU3/add_8_2                        129.5028      0.0    129.5028     0.0000       0.0000  ReLU_2_DW01_add_0_DW01_add_2
+ReLU4                                318.8808      0.0     59.8752     0.0000       0.0000  ReLU_1
+ReLU4/add_8                          129.5028      0.0    129.5028     0.0000       0.0000  ReLU_1_DW01_add_1
+ReLU4/add_8_2                        129.5028      0.0    129.5028     0.0000       0.0000  ReLU_1_DW01_add_0
+--------------------------------  -----------  -------  ----------  ---------  -----------  -------------------------------
+Total                                                   24847.9807  6226.1133  747255.5020
+
+1

@@ -1,0 +1,71 @@
+Loading db file '/cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db'
+Loading db file '/home/H125720823_HDL/Homework6/01_RTL/00_Memory/01_input_SRAM/input_sram_nldm_ff_0p99v_0p99v_125c_syn.db'
+Loading db file '/home/H125720823_HDL/Homework6/01_RTL/00_Memory/02_bias_RF/bias_rf_nldm_ff_0p99v_0p99v_125c_syn.db'
+Loading db file '/home/H125720823_HDL/Homework6/01_RTL/00_Memory/03_kernel_RF/kernel_rf_nldm_ff_0p99v_0p99v_125c_syn.db'
+Loading db file '/home/H125720823_HDL/Homework6/01_RTL/00_Memory/04_partial_sum_dp_SRAM/partial_sum_sram_nldm_ff_0p99v_0p99v_125c_syn.db'
+Information: Propagating switching activity (low effort zero delay simulation). (PWR-6)
+Warning: Design has unannotated primary inputs. (PWR-414)
+Warning: Design has unannotated sequential cell outputs. (PWR-415)
+Warning: Design has unannotated black box outputs. (PWR-428)
+ 
+****************************************
+Report : power
+        -analysis_effort low
+Design : TOP
+Version: T-2022.03
+Date   : Fri Dec 20 13:28:16 2024
+****************************************
+
+
+Library(s) Used:
+
+    sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c (File: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db)
+    partial_sum_sram_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/04_partial_sum_dp_SRAM/partial_sum_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
+    kernel_rf_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/03_kernel_RF/kernel_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
+    bias_rf_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/02_bias_RF/bias_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
+    input_sram_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/01_input_SRAM/input_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
+
+
+Operating Conditions: ss_typical_max_0p81v_125c   Library: sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+Wire Load Model Mode: top
+
+Design        Wire Load Model            Library
+------------------------------------------------
+TOP                    Zero              sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c
+
+
+Global Operating Voltage = 0.81 
+Power-specific unit information :
+    Voltage Units = 1V
+    Capacitance Units = 1.000000pf
+    Time Units = 1ns
+    Dynamic Power Units = 1mW    (derived from V,C,T units)
+    Leakage Power Units = 1uW
+
+
+Attributes
+----------
+i - Including register clock pin internal power
+
+
+  Cell Internal Power  =  60.2290 mW  (100%)
+  Net Switching Power  =  59.2820 uW    (0%)
+                         ---------
+Total Dynamic Power    =  60.2883 mW  (100%)
+
+Cell Leakage Power     = 175.1220 mW
+
+
+                 Internal         Switching           Leakage            Total
+Power Group      Power            Power               Power              Power   (   %    )  Attrs
+--------------------------------------------------------------------------------------------------
+io_pad             0.0000            0.0000            0.0000            0.0000  (   0.00%)
+memory            59.8156        4.9707e-03        1.7481e+05          234.6306  (  99.67%)
+black_box          0.0000            0.0000            0.0000            0.0000  (   0.00%)
+clock_network      0.3299            0.0000        2.2509e-02        1.7104e-04  (   0.00%)  i
+register       3.2194e-03        1.1200e-03           46.1024            0.3802  (   0.16%)
+sequential     5.2568e-03        2.4300e-03            9.9983        1.7685e-02  (   0.01%)
+combinational  7.5097e-02        5.0792e-02          255.7642            0.3817  (   0.16%)
+--------------------------------------------------------------------------------------------------
+Total             60.2290 mW     5.9313e-02 mW     1.7512e+05 uW       235.4103 mW
+1
