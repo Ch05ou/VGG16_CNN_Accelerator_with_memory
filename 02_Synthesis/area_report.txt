@@ -9,10 +9,10 @@ Date   : Fri Dec 20 13:28:11 2024
 Library(s) Used:
 
     sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c (File: /cad/CBDK/CBDK_TSMC40_Arm_f2.0/CIC/SynopsysDC/db/sc9_base_rvt/sc9_cln40g_base_rvt_ss_typical_max_0p81v_125c.db)
-    partial_sum_sram_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/04_partial_sum_dp_SRAM/partial_sum_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
-    kernel_rf_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/03_kernel_RF/kernel_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
-    bias_rf_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/02_bias_RF/bias_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
-    input_sram_nldm_ff_0p99v_0p99v_125c (File: /home/H125720823_HDL/Homework6/01_RTL/00_Memory/01_input_SRAM/input_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
+    partial_sum_sram_nldm_ff_0p99v_0p99v_125c (File: /home/xxxxxxxxxx_HDL/Homework6/01_RTL/00_Memory/04_partial_sum_dp_SRAM/partial_sum_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
+    kernel_rf_nldm_ff_0p99v_0p99v_125c (File: /home/xxxxxxxxxx_HDL/Homework6/01_RTL/00_Memory/03_kernel_RF/kernel_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
+    bias_rf_nldm_ff_0p99v_0p99v_125c (File: /home/xxxxxxxxxx_HDL/Homework6/01_RTL/00_Memory/02_bias_RF/bias_rf_nldm_ff_0p99v_0p99v_125c_syn.db)
+    input_sram_nldm_ff_0p99v_0p99v_125c (File: /home/xxxxxxxxxx_HDL/Homework6/01_RTL/00_Memory/01_input_SRAM/input_sram_nldm_ff_0p99v_0p99v_125c_syn.db)
 
 Number of ports:                         9788
 Number of nets:                         28115
